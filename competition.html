@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<title>Competition</title>
+		<script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+		<script src="https://rawgit.com/ngokevin/aframe-animation-component/master/dist/aframe-animation-component.min.js"></script>
+		<script src="https://unpkg.com/aframe-mountain-component@0.3.2/dist/aframe-mountain-component.min.js"></script>
+		<script src="https://unpkg.com/aframe-particle-system-component@1.0.5/dist/aframe-particle-system-component.min.js"></script>
+	</head>
+	<body>
+		<a-assets>
+			<img id="jkey" src="images/j.jpg">
+			<img id="mercury" src="images/planetm.jpg">
+			<img id="venus" src="images/planetv.jpg">
+			<img id="earth" src="images/planete.jpg">
+			<img id="mars" src="images/planetmars.jpg">
+		</a-assets>
+		<a-scene>
+			<a-sky id="maphall" src="images/spaceak.jpg" rotation="0 0 0" visible="true"></a-sky>
+			<a-sound src="images/typing.mp3" autoplay="true" loop="true" volume="2"></a-sound>
+			<a-entity id="mouseCursor" cursor="rayOrigin: mouse" position="" rotation="" scale="" visible="" raycaster=""></a-entity>
+			<a-sphere radius="3" position="0 0 0" src="images/sun.jpg">
+			<a-sphere radius="0.7" position="0 0 -3"	src="images/planetm.jpg">
+				<a-animation attribute="position"
+					direction="alternate"
+					dur="5000"
+					from="0 0 -5"
+					to="-8 0 -1"
+					repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-sphere radius="1" position="0 0 6" src="images/planetv.jpg">
+				<a-animation attribute="position"
+					direction="alternate"
+					dur="5000"
+					from="0 0 6"
+					to="-8 0 4"
+					repeat="indefinite"></a-animation>
+				<a-animation attribute="rotation"
+					direction="alternate"
+					dur="5000"
+					from="0 0 0"
+					to="360 0 0"
+					repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-sphere radius="1.2" position="0 0 -12" src="images/planete.jpg">
+				<a-animation attribute="position"
+					direction="alternate"
+					dur="5000"
+					from="0 0 -12"
+					to="8 0 -12"
+					repeat="indefinite"></a-animation>
+					<a-animation attribute="rotation"
+					direction="alternate"
+					dur="5000"
+					from="0 0 0"
+					to="360 0 0"
+					repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-sphere radius="1" position="0 0 -16" src="images/planetmars.jpg">
+				<a-animation attribute="position"
+					direction="alternate"
+					dur="5000"
+					from="0 0 -16"
+					to="8 0 -16"
+					repeat="indefinite"></a-animation>
+					<a-animation attribute="rotation"
+					direction="alternate"
+					dur="5000"
+					from="0 0 0"
+					to="360 0 0"
+					repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-sphere radius="1" position="0 0 21" src="images/planets.jpg">
+				<a-animation attribute="position"
+					direction="alternate"
+					dur="5000"
+					from="0 0 21"
+					to="8 0 21"
+					repeat="indefinite"></a-animation>
+					<a-animation attribute="rotation"
+					direction="alternate"
+					dur="5000"
+					from="0 0 0"
+					to="360 0 0"
+					repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-sphere radius="2" position="0 0 -26" src="images/planetj.jpg">
+				<a-animation attribute="position"
+					direction="alternate"
+					dur="5000"
+					from="0 0 -26"
+					to="7 0 -26"
+					repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-sphere radius="1" position="0 0 30" src="images/nepture.jpg">
+				<a-animation attribute="position"
+					direction="alternate"
+					dur="5000"
+					from="0 0 30"
+					to="7 0 30"
+					repeat="indefinite"></a-animation>
+					<a-animation attribute="rotation"
+					direction="alternate"
+					dur="5000"
+					from="0 0 0"
+					to="360 0 0"
+					repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-sphere radius="1" position="0 0 -33" src="images/uranus.jpg">
+				<a-animation attribute="position"
+					direction="alternate"
+					dur="5000"
+					from="0 0 -33"
+					to="7 0 -33"
+					repeat="indefinite"></a-animation>
+					<a-animation attribute="rotation"
+					direction="alternate"
+					dur="5000"
+					from="0 0 0"
+					to="360 0 0"
+					repeat="indefinite"></a-animation>
+			</a-sphere>
+		</a-scene>
+	</body>
+</html>
